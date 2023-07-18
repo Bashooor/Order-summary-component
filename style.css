@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+
+}
+.container {
+    background-color: white;
+    text-align: center;
+    width: calc(1440px * 0.26);
+    height: max-content;
+    border-radius: 10px;
+}
+.container > img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.container a {
+    display: block;
+}
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.order h1 {
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.order p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16px;
+}
+.selected-music {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.selected-music div {
+    margin-left: 13px;
+}
+.selected-music p:nth-child(1) {
+    margin: 3px 0 5px 0;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.selected-music p:nth-child(2) {
+    margin: 0;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.selected-music a {
+    position: relative;
+    top: 13px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+.proceed {
+    padding: 10px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 20px 6px hsl(225, 100%, 94%);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+}
+.proceed:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+.cancel {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}
